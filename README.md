@@ -1,3 +1,4 @@
+# Romanian Gramatical Error Correcyion
 The task of identifying and correcting a grammatical problem in a statement that is grammatically wrong is known as grammar error correction, or GEC. All types of grammatical errors, including as misspellings, improper use of articles, prepositions, pronouns, nouns, etc., as well as weak sentence structure, can be included in this list. GEC is simply an NLP job that trains computers to fix grammar in the same way that humans do. Grammar checkers are used in a variety of applications: email, programs, text editors, messages, and others, to check the grammar of the input text.
 
 There are multiple approaches to this task: rule based systems, syntax based system, different types of machine learning systems and neural based systems.
