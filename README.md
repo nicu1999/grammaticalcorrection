@@ -6,3 +6,6 @@ The project was done with the help of: jupyter notebooks, the transformers libra
 ## How it works
 There are 3 parts to this project: token tagging (TokenTagging.ipynb), training the model (TagTrain.ipynb) and wraping it all up (GEC_final.ipynb).
 ### Token tagging 
+In this phase the goal is to make mask of how to get from the initial, wrong phrase, to the final correct one. An example:
+> Wrong: Acoperișul din șindrilă nu se mai păstrează, fiind înlocuită cu țiglă în 1936, fapt ce a necesitat sprijinirea acoperișului cu structuri inprovizate.
+> Correct: Acoperișul din șindrilă nu se mai păstrează, fiind înlocuită cu țiglă în 1936, fapt ce a necesitat sprijinirea acoperișului cu structuri improvizate.
