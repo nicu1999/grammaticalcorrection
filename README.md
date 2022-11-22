@@ -1,6 +1,6 @@
-# Romanian Gramatical Error Correction
-## What is Gramatical Error Correction
-The task of identifying and correcting a grammatical problem in a statement that is grammatically wrong is known as grammar error correction, or GEC. All types of grammatical errors, including as misspellings, improper use of articles, prepositions, pronouns, nouns, etc., as well as weak sentence structure, can be included in this list. GEC is simply an NLP job that trains computers to fix grammar in the same way that humans do. Grammar checkers are used in a variety of applications: email, programs, text editors, messages, and others, to check the grammar of the input text.
+# Romanian Grammatical  Error Correction
+## What is Grammatical  Error Correction
+The task of identifying and correcting a grammatical problem in a statement that is grammatically wrong is known as a grammar error correction, or GEC. All types of grammatical errors, including as misspellings, improper use of articles, prepositions, pronouns, nouns, etc., as well as weak sentence structure, can be included in this list. GEC is simply an NLP job that trains computers to fix grammar in the same way that humans do. Grammar checkers are used in a variety of applications: email, programs, text editors, messages, and others, to check the grammar of the input text.
 ## Used resources
 The project was done with the help of: jupyter notebooks, the transformers library, the datasets library, the https://github.com/teodor-cotet/RoGEC dataset, cross language RoBERTa, numpy and torch.
 ## How it works
@@ -19,8 +19,8 @@ The "input_ids" represents the ids of the tokens (we are using the roBERTa token
 
 ### Training the Model
 
-The base model used is the xlm-roberta-base (cross language model and fine tune it for token classification. The token we are classifying are, of course, weather to delete a token or to modify it.
+The base model used is the xlm-roberta-base (cross language model and fine tune it for token classification. The classification is, of course, whether to delete a token or to modify it.
 
 ### Wraping it all up
 
-One of the task roBERTa is trained on is token masking, meaning that a token is removed, and the model is tasked with quessing which token was deleted. The model is using this to its advantage. The basic ideea is that a finetuned roBERTa on toke classification highlights the tokens that should be deleted (trivial) and those that should be replaced (using an out of the box roBERTa model used for token masking).
+One of the task roBERTa is trained on is token masking, meaning that a token is removed, and the model is tasked with guessing which token was deleted. The model is using this to its advantage. The basic idea is that a finetuned roBERTa on toke classification highlights the tokens that should be deleted (trivial) and those that should be replaced (using an out of the box roBERTa model used for token masking).
